@@ -4,77 +4,88 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Para Sarahí 🎂</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #e1f5fe, #fff3f6);
-      margin: 0;
-      padding: 0;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      text-align: center;
-    }
+<style>
+  body {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #fceff9, #f5f7fa);
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    animation: fadeInBody 1s ease;
+  }
 
-    .card {
-      background: white;
-      border-radius: 18px;
-      padding: 30px 20px;
-      max-width: 500px;
-      margin: 20px;
-      box-shadow: 0 8px 18px rgba(0,0,0,0.1);
-      animation: fadeIn 1.5s ease;
-    }
+  .card {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 40px 30px;
+    max-width: 600px;
+    margin: 30px 15px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeInCard 1.3s ease;
+    border: 1px solid #f0d9ff;
+  }
 
-    h1 {
-      color: #0077b6;
-      font-size: 2em;
-      margin-bottom: 10px;
-    }
+  h1 {
+    color: #8e44ad;
+    font-size: 2.4em;
+    margin-bottom: 18px;
+  }
 
-    p {
-      font-size: 1.1em;
-      line-height: 1.6;
-      margin: 10px 0;
-    }
+  p {
+    font-size: 1.15em;
+    line-height: 1.7;
+    color: #555;
+    margin: 12px 0;
+  }
 
-    .footer {
-      margin-top: 25px;
-      font-size: 0.9em;
-      color: #888;
-    }
+  .footer {
+    margin-top: 35px;
+    font-size: 0.9em;
+    color: #aaa;
+  }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+  #mensaje-final {
+    color: #d97706;
+    font-weight: bold;
+    margin-top: 25px;
+    display: none;
+    font-size: 1.1em;
+  }
 
-    #mensaje-final {
-      color: #028090;
-      font-weight: bold;
-      margin-top: 20px;
-      display: none;
-    }
+  button {
+    margin-top: 40px;
+    padding: 12px 26px;
+    background: linear-gradient(135deg, #d291bc, #957dad);
+    color: white;
+    border: none;
+    border-radius: 14px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(150, 80, 160, 0.2);
+  }
 
-    button {
-      margin-top: 30px;
-      padding: 10px 22px;
-      background-color: #00b4d8;
-      color: white;
-      border: none;
-      border-radius: 10px;
-      font-size: 1em;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
+  button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(150, 80, 160, 0.3);
+  }
 
-    button:hover {
-      background-color: #0096c7;
-    }
-  </style>
+  @keyframes fadeInBody {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes fadeInCard {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
 </head>
 <body>
   <div class="card">
