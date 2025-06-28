@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Sarahí 🎂</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #e1f5fe, #fff3f6);
+      margin: 0;
+      padding: 0;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .card {
+      background: white;
+      border-radius: 18px;
+      padding: 30px 20px;
+      max-width: 500px;
+      margin: 20px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+      animation: fadeIn 1.5s ease;
+    }
+
+    h1 {
+      color: #0077b6;
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin: 10px 0;
+    }
+
+    .footer {
+      margin-top: 25px;
+      font-size: 0.9em;
+      color: #888;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    #mensaje-final {
+      color: #028090;
+      font-weight: bold;
+      margin-top: 20px;
+      display: none;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 10px 22px;
+      background-color: #00b4d8;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0096c7;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🎉 ¡Feliz cumpleaños, Sarahí! 🎂</h1>
+    
+    <p>Ojalá que este nuevo año esté lleno de cosas chidas para ti: salud, buena vibra y momentos que te hagan sonreír un montón.</p>
+    
+    <p>Hoy me la pasé muy bien platicando contigo. Neta qué gusto volver a reírnos un rato.</p>
+
+    <p>Y quería aprovechar para decirte algo: me siento apenado por cómo dejé de hablarte hace tiempo. Fue una situación rara, y tomé decisiones que, viéndolo bien, no fueron las mejores. Terminé alejándome de alguien que había estado ahí durante años —tú.</p>
+
+    <p>No fue por mala onda, ni porque no me importaras. Simplemente no supe manejarlo, y aunque lo que pasó con esa persona parecía importante en ese momento, hoy entiendo que no era lo que pensé, y que me equivoqué en cómo manejé todo.</p>
+
+    <p>Pero más allá de eso, me alegra poder hablar contigo otra vez, aunque sea poquito. Te deseo lo mejor siempre y ojalá un día nos podamos ver, aunque sea de compas. ✌️</p>
+
+    <p>¡TQQ mucho, en serio! Gracias por siempre haber sido tú 💫</p>
+
+    <p id="mensaje-final">🫶 ¡Feliz vuelta al sol, Sarahí! 🫶</p>
+    
+    <button onclick="mostrarMensaje()">💌 Da click</button>
+    
+    <div class="footer">– Con cariño, Memo 🧃</div>
+  </div>
+
+  <script>
+    function mostrarMensaje() {
+      document.getElementById('mensaje-final').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
